@@ -1,7 +1,7 @@
 import torch
 
-x = torch.rand(2,2)
-y = torch.rand(2,2)
+x = torch.rand(4, 4)
 print(x)
-print(y)
-z = torch.add(x,y)
+y = x.view(-1, 8)
+print(y.size())
+
