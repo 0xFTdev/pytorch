@@ -1,7 +1,8 @@
 import torch
+import numpy as np
 
-x = torch.rand(4, 4)
-print(x)
-y = x.view(-1, 8)
-print(y.size())
+a = torch.ones(5)
+print(a)
+b = a.numpy()
+print(type(b))
 
